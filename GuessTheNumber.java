@@ -21,7 +21,7 @@ public class GuessTheNumber {
             if (Round1guess == Round1targetNumber) {
                 System.out.println("Congratulations! You guessed the number " + Round1targetNumber + " in "
                         + (attempts + 1) + " attempts.");
-                System.out.println("Score:" + attempts * 10 + "/" + 100);
+                System.out.println("Score:" + (attempts + 1) * 10 + "/" + 100);
                 System.out.println("Welcome to the Final round");
                 System.out.println("I have chosen a number between " + minRange + " and " + maxRange + ".");
                 System.out.println("Can you guess it in " + maxfinalAttempts + " attempts or less?");
@@ -43,6 +43,7 @@ public class GuessTheNumber {
             if (finalguess == finaltargetNumber) {
                 System.out.println("Congratulations! You guessed the number " + finaltargetNumber + " in "
                         + (finalattempts + 1) + " attempts.");
+                 System.out.println("Final Score :" +  (finalattempts + 1)*10 + "/" + 100);
                 break;
             } else if (finalguess > finaltargetNumber) {
                 System.out.println("Your guess is too large!!");
