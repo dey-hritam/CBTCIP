@@ -67,9 +67,9 @@ public class AtmInterface {
     public static void viewBalance(Account[] acc, int i) {
         System.out.println("\nAccount No\tName\tOld Balance\tNew Balance\tLast Payment");
         for (int j = 0; j < i; j++) {
-            System.out.println(
-                    acc[j].acc_no + "\t" + "\t" + acc[j].name + "\t" + "\t" + acc[j].old_balance + "\t" + "\t"
-                            + acc[j].new_balance + "\t" + "\t"
+              System.out.println(
+                    acc[j].acc_no + "\t" + "\t" + acc[j].name + "\t" + "  \t" + acc[j].old_balance + "\t" + "   \t"
+                            + acc[j].new_balance + "\t" + "\t" + "\t"
                             + acc[j].last_payment.dd + "/" + acc[j].last_payment.mm + "/" + acc[j].last_payment.yy);
         }
     }
